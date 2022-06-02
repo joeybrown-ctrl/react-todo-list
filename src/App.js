@@ -1,10 +1,12 @@
 import logo from './logo.svg';
 import './App.css';
+import Header from "./components/Header/Header"
+import data from "./data/data.json"
 
 function App() {
     return (
         <div className="App">
-            <h3>Hello! Todo List goes here!</h3>
+            <Header />
         </div>
     );
 }
