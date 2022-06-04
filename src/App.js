@@ -1,5 +1,4 @@
 import { useState } from "react"
-import './App.css';
 import Header from "./Header"
 import data from "./data.json"
 import ToDoList from "./ToDoList"
@@ -30,7 +29,7 @@ function App() {
 
 
     return (
-        <div className="App">
+        <div className="flex flex-col">
             <Header />
             <ToDoList toDoList={toDoList} handleFilter={handleFilter} handleToggle={handleToggle} />
             <ToDoListForm addTask={addTask} />

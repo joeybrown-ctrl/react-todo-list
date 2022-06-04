@@ -14,7 +14,7 @@ const ToDoListForm = ({addTask}) => {
     }
 
     return (
-        <form onSubmit={handleSubmit}>
+        <form onSubmit={handleSubmit} className="mx-auto my-auto">
             <input value={userInput} type="text" onChange={handleChange} placeholder="Enter task..." />
             <button>Submit</button>
         </form>
