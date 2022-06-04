@@ -1,6 +1,12 @@
-const ToDo = ({todo}) => {
+const ToDo = ({todo, handleToggle}) => {
+
+    const handleClick = (e) => {
+        e.preventDefault()
+        handleToggle(e.currentTarget.id)
+    }
+
     return (
-        <div className={todo.complete ? "strike" : ""}>
+        <div id={todo.id} key={todo.id + todo.task} name="todo" className={todo.complete ? "strike" : ""} onClick={handleClick}>
             {todo.task}
         </div>
     )
