@@ -4,6 +4,8 @@ import data from "./data.json"
 import ToDoList from "./ToDoList"
 import ToDoListForm from "./ToDoListForm"
 
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 function App() {
     const [toDoList, setToDoList] = useState(data)
 
